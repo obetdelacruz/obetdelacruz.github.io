@@ -53,8 +53,12 @@ body {
   font-size: 15px;
 }
 
-.welcome-statement {
+.typewrite {
+  color: #fff;
+  padding-top: 10em;
   font-size: 20px;
+  padding-top: 10em;
+  text-decoration: none;
 }
 
 .welcome-place-of-address {
