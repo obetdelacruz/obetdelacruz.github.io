@@ -7,33 +7,26 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
+/* I. NAVIGATION HEADER SECTION*/
+
+.logo-text {
+  color: #48c291;
+  font-weight: bold;
 }
-
-/* header navigation section */
-
-.navbar-brand {
-  color: red;
-}
-
 .offcanvas-title span {
   color: #48c291;
+  font-weight: bold;
 }
 
 .offcanvas-title {
   text-transform: uppercase;
 }
 
-.header > img {
-  width: 100%;
-  height: auto;
-}
-
 .container-fluid > a {
   text-transform: uppercase;
 }
 
-/* WELCOME REMARKS SECTION */
+/* II. WELCOME REMARKS SECTION */
 
 .welcome-remarks {
   display: flex;
@@ -45,16 +38,16 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: whitesmoke;
-  height: 100%;
-  width: 100%;
-  padding: 15px 5px;
+  height: 50vh;
+  width: 100vw;
 }
+
 .welcome {
   font-size: 15px;
 }
 
 .typewrite {
-  color: #fff;
+  color: whitesmoke;
   padding-top: 10em;
   font-size: 20px;
   padding-top: 10em;
@@ -62,19 +55,18 @@ body {
 }
 
 .welcome-place-of-address {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 @media screen and (min-width: 601px) and (max-width: 960px) {
   .welcome-remarks {
-    height: 75%;
-    width: 100%vw;
-    padding: 15px 5px;
+    height: 50vh;
   }
+
   .welcome {
     font-size: 25px;
   }
-  .welcome-statement {
+  .typewrite {
     font-size: 30px;
   }
   .welcome-place-of-address {
@@ -84,17 +76,59 @@ body {
 
 @media screen and (min-width: 961px) {
   .welcome-remarks {
-    height: 100%;
+    height: 75vh;
     width: auto;
-    padding: 15px 5px;
   }
   .welcome {
-    font-size: 25px;
+    font-size: 35px;
   }
-  .welcome-statement {
-    font-size: 30px;
+  .typewrite {
+    font-size: 50px;
   }
   .welcome-place-of-address {
-    font-size: 15px;
+    font-size: 20px;
   }
+}
+
+/* III. MY SKILLS SECTION */
+.my-skills {
+  background-color: #212529;
+  color: whitesmoke;
+}
+
+.my-skills > h1 {
+  text-align: center;
+  font-size: 24px;
+  padding: 10px 0 10px 0;
+}
+
+.my-skills-introduction > h2 {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+.introductory-name {
+  color: #48c291;
+  font-weight: bold;
+}
+
+.introductory-paragraph {
+  font-size: 13px;
+  text-align: justify;
+  padding: 10px 7px 10px 7px;
+}
+
+.introductory-paragraph::first-letter {
+  color: #48c291;
+  float: left;
+  font-family: Georgia;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+.my-skills-list > img {
+  height: auto;
+  width: 50px;
 }
