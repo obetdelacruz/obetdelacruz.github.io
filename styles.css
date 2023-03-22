@@ -38,24 +38,32 @@
   background-repeat: no-repeat;
   background-size: cover;
   color: whitesmoke;
-  height: 50vh;
+  height: 100vh;
   width: 100vw;
 }
 
 .welcome {
-  font-size: 15px;
+  font-size: 27px;
 }
 
 .typewrite {
   color: whitesmoke;
   padding-top: 10em;
-  font-size: 20px;
+  font-size: 36px;
+  font-weight: bold;
   padding-top: 10em;
   text-decoration: none;
 }
 
 .welcome-place-of-address {
-  font-size: 12px;
+  font-size: 19px;
+}
+.btn-lg {
+  padding: 15px 25px;
+  font-size: 40px;
+  border-radius: 10px;
+  min-width: 100px;
+  max-width: 150px;
 }
 
 @media screen and (min-width: 601px) and (max-width: 960px) {
@@ -96,26 +104,15 @@
   color: whitesmoke;
 }
 
-.my-skills > h1 {
-  text-align: center;
-  font-size: 24px;
-  padding: 10px 0 10px 0;
-}
-
 .my-skills-introduction > h2 {
   font-size: 20px;
   text-align: center;
   padding: 10px 0 10px 0;
 }
+
 .introductory-name {
   color: #48c291;
   font-weight: bold;
-}
-
-.introductory-paragraph {
-  font-size: 13px;
-  text-align: justify;
-  padding: 10px 7px 10px 7px;
 }
 
 .introductory-paragraph::first-letter {
@@ -130,17 +127,156 @@
   padding-left: 3px;
 }
 
-.web-design {
+.introductory-paragraph {
+  font-size: 14px;
+  text-align: justify;
+  padding: 10px 7px 10px 7px;
+}
+
+.web-design,
+.html-group,
+.css-group,
+.javascript-group {
   display: grid;
   grid-template-columns: 0.5fr 2fr;
   flex-direction: row;
 }
-.web-design > img {
+
+.my-skills-list div img {
   height: auto;
   width: 60px;
   margin-left: 5px;
 }
 
-.my-skills-introduction > p {
-  font-size: 13px;
+.my-skills-list div h5 {
+  font-size: 17px;
+}
+.my-skills-list div p {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 601px) and (max-width: 960px) {
+  .my-skills-introduction > h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .introductory-paragraph::first-letter {
+    /* DROP CAP EFFECT */
+    color: #ff004e;
+    float: left;
+    font-family: Georgia;
+    font-size: 100px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+  }
+
+  .introductory-paragraph {
+    font-size: 20px;
+    text-align: justify;
+    padding: 20px 20px 20px 20px;
+  }
+
+  .my-skills-list div img {
+    height: auto;
+    width: 150px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin: 5px 0 5px 0;
+  }
+
+  .my-skills-list div h5 {
+    font-size: 30px;
+    margin: 5px 10px 5px 10px;
+  }
+  .my-skills-list div p {
+    font-size: 20px;
+    margin: 5px 10px 5px 10px;
+  }
+}
+@media screen and (min-width: 961px) {
+  .my-skills-introduction > h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .introductory-paragraph::first-letter {
+    /* DROP CAP EFFECT */
+    color: #ff004e;
+    float: left;
+    font-family: Georgia;
+    font-size: 100px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+  }
+
+  .introductory-paragraph {
+    font-size: 20px;
+    text-align: justify;
+    padding: 20px 20px 20px 20px;
+  }
+
+  .my-skills-list div img {
+    height: auto;
+    width: 150px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin: 5px 0 5px 0;
+  }
+
+  .my-skills-list div h5 {
+    font-size: 30px;
+    margin: 5px 10px 5px 10px;
+  }
+  .my-skills-list div p {
+    font-size: 20px;
+    margin: 5px 10px 5px 10px;
+  }
+}
+
+/* III. SUMMARY SECTION */
+.summary {
+  background-color: #353a41;
+  color: whitesmoke;
+}
+
+.project-pictures {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-content: center;
+  padding-left: 30px;
+  border: 5px solid #353a41;
+  gap: 15px;
+}
+
+.project-pictures img {
+  width: 300px;
+  height: auto;
+}
+
+.man-portrait {
+  position: relative;
+  height: 200px;
+  width: 257px;
+}
+
+.man-portrait-description {
+  position: absolute;
+  top: 75%;
+  bottom: 0;
+  left: 10%;
+  right: 0;
+  color: whitesmoke;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+}
+
+.man-portrait:hover .man-portrait-description {
+  visibility: visible;
+  opacity: 1;
 }
