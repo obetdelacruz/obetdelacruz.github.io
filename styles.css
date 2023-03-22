@@ -245,26 +245,21 @@
 }
 
 .project-pictures {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  align-content: center;
-  padding-left: 30px;
-  border: 5px solid #353a41;
-  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  border: 2px solid red;
 }
 
-.project-pictures img {
-  width: 300px;
-  height: auto;
-}
-
-.man-portrait {
+/* Appearing Text over image during hover */
+.css-effect-hover {
   position: relative;
   height: 200px;
   width: 257px;
 }
 
-.man-portrait-description {
+.appear-text-hover {
   position: absolute;
   top: 75%;
   bottom: 0;
@@ -276,7 +271,14 @@
   text-align: center;
 }
 
-.man-portrait:hover .man-portrait-description {
+.css-effect-hover:hover .appear-text-hover {
   visibility: visible;
   opacity: 1;
+}
+/* Appearing Text over image during hover */
+
+/* Hover Effect of Blurring Image during hover */
+.css-effect-hover > img:hover {
+  webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+  filter: blur(4px);
 }
