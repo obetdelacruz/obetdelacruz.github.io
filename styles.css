@@ -9,10 +9,15 @@
 
 /* I. NAVIGATION HEADER SECTION*/
 
-.logo-text {
-  color: #48c291;
+.navbar-brand {
+  text-transform: uppercase;
   font-weight: bold;
 }
+
+.logo-text {
+  color: #48c291;
+}
+
 .offcanvas-title span {
   color: #48c291;
   font-weight: bold;
@@ -20,10 +25,7 @@
 
 .offcanvas-title {
   text-transform: uppercase;
-}
-
-.container-fluid > a {
-  text-transform: uppercase;
+  font-weight: bold;
 }
 
 /* II. WELCOME REMARKS SECTION */
@@ -38,8 +40,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   color: whitesmoke;
-  height: 100vh;
-  width: 100vw;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .welcome {
@@ -238,8 +240,8 @@
   }
 }
 
-/* III. SUMMARY SECTION */
-.summary {
+/* III. PROJECT SECTION */
+.project-section {
   background-color: #353a41;
   color: whitesmoke;
 }
@@ -247,38 +249,106 @@
 .project-pictures {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  justify-content: center;
-  border: 2px solid red;
+  justify-content: space-evenly;
+  align-items: left;
+  gap: 15px;
+
+  padding: 27px 27px; /*need ammendment*/
 }
 
-/* Appearing Text over image during hover */
-.css-effect-hover {
+#project1 {
+  width: 20em;
+  height: auto;
+}
+
+#project2 {
+  width: 20em;
+  height: auto;
+}
+#project3 {
+  width: 20em;
+  height: auto;
+}
+
+#project4 {
+  width: 20em;
+  height: auto;
+}
+
+#project5 {
+  width: 20em;
+  height: auto;
+}
+
+#project6 {
+  width: 20em;
+  height: auto;
+}
+
+#project7 {
+  width: 20em;
+  height: auto;
+}
+.img-wrap-project1,
+.img-wrap-project2,
+.img-wrap-project3,
+.img-wrap-project4,
+.img-wrap-project5,
+.img-wrap-project6,
+.img-wrap-project7 {
   position: relative;
-  height: 200px;
-  width: 257px;
 }
 
-.appear-text-hover {
-  position: absolute;
-  top: 75%;
-  bottom: 0;
-  left: 10%;
-  right: 0;
+.img-description-project1,
+.img-description-project2,
+.img-description-project3,
+.img-description-project4,
+.img-description-project5,
+.img-description-project6,
+.img-description-project7 {
+  position: absolute; /*TO DO: this one need olso of ammendment*/
+  top: 55px;
+  bottom: 50px;
+  left: 55px;
+  right: 55px;
   color: whitesmoke;
-  visibility: hidden;
   opacity: 0;
-  text-align: center;
+  visibility: hidden;
 }
 
-.css-effect-hover:hover .appear-text-hover {
+.img-wrap-project1,
+.img-wrap-project2,
+.img-wrap-project3,
+.img-wrap-project4,
+.img-wrap-project5,
+.img-wrap-project6,
+.img-wrap-project7:hover .img-description-project1,
+.img-description-project2,
+.img-description-project3,
+.img-description-project4,
+.img-description-project5,
+.img-description-project6,
+.img-description-project7 {
   visibility: visible;
   opacity: 1;
 }
-/* Appearing Text over image during hover */
 
 /* Hover Effect of Blurring Image during hover */
-.css-effect-hover > img:hover {
-  webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+.project-pictures img:hover {
+  webkit-filter: blur(4px);
   filter: blur(4px);
+}
+
+@media screen and (min-width: 961px) {
+  .project-pictures {
+    display: grid;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    gap: 25px;
+    padding: 50px 50px;
+    margin: auto;
+  }
 }

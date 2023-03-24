@@ -9,29 +9,37 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"/>
-      <title>Document</title>
-      <script type="text/javascript" src="script.js"></script>
+      crossorigin="anonymous"
+    />
+    <title>My Personal Webpage</title>
+    <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
-    <header class="header">
-      <nav class="navbar navbar-dark bg-dark fixed-top">
+    <header>
+      <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand fs-1 fw-bold" href="#"><span class="logo-text">l</span>obe<span class="logo-text">r</span>t + <span class="logo-text">dc</span></a>
+          <a class="navbar-brand fs-2" href="#">
+            <span class="logo-text">l</span>obe<span class="logo-text">rt</span>
+            + <span class="logo-text">dc</span></a
+          >
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasDarkNavbar"
-            aria-controls="offcanvasDarkNavbar">
+            aria-controls="offcanvasDarkNavbar"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
             class="offcanvas offcanvas-end text-bg-dark"
-            tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-                <span>l</span>obe<span>r</span>t + <span>dc</span>
+              <h5 class="offcanvas-title fs-3" id="offcanvasDarkNavbarLabel">
+                <span>l</span>obe<span>rt</span> + <span>dc</span>
               </h5>
               <button
                 type="button"
@@ -40,27 +48,30 @@
                 aria-label="Close"
               ></button>
             </div>
-
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a>
+                    >Home</a
+                  >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Skills</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Projects</a>
+                  <a class="nav-link" href="#">Project</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Contact</a>
                 </li>
-                
-                <div class="d-grid gap-2 col-3 justify-content-md-end">
-                  <a class="btn btn-outline-primary rounded-pill" href="#" role="button" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size:1rem;">Resume
-                  </a>
-                </div>
+              </ul>
+              <button
+                class="btn btn-outline-primary rounded-pill btn-md btn-block"
+                role="button"
+                href="#"
+              >
+                Resume
+              </button>
             </div>
           </div>
         </div>
@@ -68,132 +79,246 @@
     </header>
     <section>
       <div class="welcome-remarks">
-      <p class="welcome">Welcome</p>
-      <p class="welcome-statement">
-        <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im Lobert Dela Cruz.", "I am a Web Developer.", "I Love Design.", "I Love to Work with You." ]'>
-          <span class="wrap"></span>
-        </a>
-      </p>
+        <p class="welcome">Welcome</p>
+        <p class="welcome-statement">
+          <a
+            href=""
+            class="typewrite"
+            data-period="2000"
+            data-type='[ "Hi, Im Lobert Dela Cruz.", "I am a Web Developer.", "I Love Design.", "I Love to Work with You." ]'
+          >
+            <span class="wrap"></span>
+          </a>
+        </p>
         <p class="welcome-place-of-address">based in Camarines Sur, Bicol.</p>
-        <a class="btn btn-outline-primary rounded-pill btn-lg btn-block"  href="#" role="button" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size:1.1rem;">Hire Me</a> 
+        <a
+          class="btn btn-outline-primary rounded-pill btn-lg btn-block"
+          href="#"
+          role="button"
+          style="
+            --bs-btn-padding-y: 0.25rem;
+            --bs-btn-padding-x: 0.1rem;
+            --bs-btn-font-size: 1.1rem;
+          "
+          >Hire Me</a
+        >
       </div>
+    </section>
 
-  </section>
-
-   <section class="my-skills">
-    <div style="position: relative;float: left;width: 100%;background-color: #212529">
-      <h1 style="font-size: 8vw;color: #2a2f34;text-align: center;text-transform: uppercase;font-weight: bolder; margin-bottom: 15px;">skills</h1>
-      <div style="position: absolute;width: 100%;top: 27%;left: 0%">
-        <h3 style="text-align: center; color:whitesmoke;font-weight: bolder;font-size: 3vw;">My Skills</h3>
-      </div>
-    </div>
-  <main class="my-skills-container">
-    <div class="my-skills-introduction">
-      <h2>I'm <span class="introductory-name">Lobert Dela Cruz</span>, a Web Developer</h2>
-      <p class="introductory-paragraph">
-        I help you build brand for your business at an affordable price.
-        Thousands of clients have procured exceptional results while
-        working with our dedicated team when an unknown printer took a
-        galley of type and scrambled it to make a type specimen book.
-        Delivering work within time and budget which meets client <span>&#8217</span>s
-        requirements is our motto. Lorem Ipsum has been the industry's
-        standard dummy text ever since an unknown printer took a galley.
-      </p>
-  </div>
-    <div class="my-skills-list">
-     <div class="web-design">
-        <img src="assets/images-icons/web-design.svg" alt="webdesign-icon" >
-        <div>
-        <h5>Web Design</h5>
-        <p>Lisque persius interesset his et, in quot quidam persequeris vim,
-        ad mea essent possim iriure.</p>
-      </div>
-    </div>
-    <div class="html-group">
-      <img src="assets/images-icons/html-icon.svg" alt="html-icon" >
-      <div>
-        <h5>HTML</h5>
-        <p>Lisque persius interesset his et, in quot quidam persequeris vim,
-        ad mea essent possim iriure.</p>
-      </div>
-    </div>
-    <div class="css-group">
-      <img src="assets/images-icons/css-icon.svg" alt="css-icon" >
-      <div>
-        <h5>CSS</h5>
-        <p>Lisque persius interesset his et, in quot quidam persequeris vim,
-        ad mea essent possim iriure.</p>
-      </div>
-    </div>
-    <div class="javascript-group">
-      <img src="assets/images-icons/javascript-icon.svg" alt="javascript-icon" >
-      <div>
-        <h5>JavaScript</h5>
-        <p>Lisque persius interesset his et, in quot quidam persequeris vim,
-        ad mea essent possim iriure.</p>
-      </div>
-    </div>
-    </div>
-  </main>
-</section>
-
-<section class="summary">
-      <div style="position: relative;float: left;width: 100%;background-color: #353a41">
-        <h1 style="font-size: 8vw;color: #3F444B;text-align: center;text-transform: uppercase;font-weight: bolder; margin-bottom: 15px;">project</h1>
-        <div style="position: absolute;width: 100%;top: 27%;left: 0%">
-          <h3 style="text-align: center; color:whitesmoke;font-weight: bolder;font-size: 3vw;">My Work</h3>
+    <section class="my-skills">
+      <div
+        style="
+          position: relative;
+          float: left;
+          width: 100%;
+          background-color: #212529;
+        "
+      >
+        <h1
+          style="
+            font-size: 8vw;
+            color: #2a2f34;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bolder;
+            margin-bottom: 15px;
+          "
+        >
+          skills
+        </h1>
+        <div style="position: absolute; width: 100%; top: 27%; left: 0%">
+          <h3
+            style="
+              text-align: center;
+              color: whitesmoke;
+              font-weight: bolder;
+              font-size: 3vw;
+            "
+          >
+            My Skills
+          </h3>
         </div>
       </div>
-      <main>
-        <!-- Gallery -->
-<div class="row">
-  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-    <img
-      src="assets/images-portrait/computer-desk-landscape.svg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Boat on Calm Water"
-    />
-
-    <img
-      src="assets/images-portrait/light-bulb-column.svg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Wintry Mountain Landscape"
-    />
-  </div>
-
-  <div class="col-lg-4 mb-4 mb-lg-0">
-    <img
-      src="assets/images-portrait/shape-photo-column.svg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Mountains in the Clouds"
-    />
-
-    <img
-      src="assets/images-portrait/laptop-desktop-ipad-landscape.svg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Boat on Calm Water"
-    />
-  </div>
-
-  <div class="col-lg-4 mb-4 mb-lg-0">
-    <img
-      src="assets/images-portrait/notebook-pen-landscape.svg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Waves at Sea"
-    />
-
-    <img
-      src="assets/images-portrait/tv-square.svg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Yosemite National Park"
-    />
-  </div>
-</div>
-<!-- Gallery -->
+      <main class="my-skills-container">
+        <div class="my-skills-introduction">
+          <h2>
+            I'm <span class="introductory-name">Lobert Dela Cruz</span>, a Web
+            Developer
+          </h2>
+          <p class="introductory-paragraph">
+            I help you build brand for your business at an affordable price.
+            Thousands of clients have procured exceptional results while working
+            with our dedicated team when an unknown printer took a galley of
+            type and scrambled it to make a type specimen book. Delivering work
+            within time and budget which meets client<span>&rsquo</span>s
+            requirements is our motto. Lorem Ipsum has been the industry's
+            standard dummy text ever since an unknown printer took a galley.
+          </p>
+        </div>
+        <div class="my-skills-list">
+          <div class="web-design">
+            <img
+              src="assets/images-icons/web-design.svg"
+              alt="webdesign-icon"
+            />
+            <div>
+              <h5>Web Design</h5>
+              <p>
+                Lisque persius interesset his et, in quot quidam persequeris
+                vim, ad mea essent possim iriure.
+              </p>
+            </div>
+          </div>
+          <div class="html-group">
+            <img src="assets/images-icons/html-icon.svg" alt="html-icon" />
+            <div>
+              <h5>HTML</h5>
+              <p>
+                Lisque persius interesset his et, in quot quidam persequeris
+                vim, ad mea essent possim iriure.
+              </p>
+            </div>
+          </div>
+          <div class="css-group">
+            <img src="assets/images-icons/css-icon.svg" alt="css-icon" />
+            <div>
+              <h5>CSS</h5>
+              <p>
+                Lisque persius interesset his et, in quot quidam persequeris
+                vim, ad mea essent possim iriure.
+              </p>
+            </div>
+          </div>
+          <div class="javascript-group">
+            <img
+              src="assets/images-icons/javascript-icon.svg"
+              alt="javascript-icon"
+            />
+            <div>
+              <h5>JavaScript</h5>
+              <p>
+                Lisque persius interesset his et, in quot quidam persequeris
+                vim, ad mea essent possim iriure.
+              </p>
+            </div>
+          </div>
+        </div>
       </main>
-</section>
+    </section>
+
+    <section class="project-section">
+      <div
+        class="project-section-banner"
+        style="
+          position: relative;
+          float: left;
+          width: 100%;
+          background-color: #353a41;
+        "
+      >
+        <h1
+          style="
+            font-size: 8vw;
+            color: #3f444b;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bolder;
+            margin-bottom: 15px;
+          "
+        >
+          project
+        </h1>
+        <div style="position: absolute; width: 100%; top: 27%; left: 0%">
+          <h3
+            style="
+              text-align: center;
+              color: whitesmoke;
+              font-weight: bolder;
+              font-size: 3vw;
+            "
+          >
+            My Work
+          </h3>
+        </div>
+      </div>
+      <main class="project-section-photos">
+        <div class="project-pictures">
+          <div class="img-wrap-project1">
+            <img
+              id="project1"
+              src="https://harnishdesign.net/demo/react/simone/demo/images/projects/project-1.jpg"
+              alt=""
+            />
+            <div class="img-description-layer-project1">
+              <p class="img-description-project1 fs-4 fw-bold">Project 1</p>
+            </div>
+          </div>
+
+          <div class="img-wrap-project2">
+            <img
+              id="project2"
+              src="https://harnishdesign.net/demo/react/simone/demo/images/projects/project-2.jpg"
+              alt=""
+            />
+            <div class="img-description-layer">
+              <p class="img-description-project2 fs-4 fw-bold">Project 2</p>
+            </div>
+          </div>
+          <div class="img-wrap-project3">
+            <img
+              id="project3"
+              src="https://harnishdesign.net/demo/react/simone/demo/images/projects/project-3.jpg"
+              alt=""
+            />
+            <div class="img-description-layer">
+              <p class="img-description-project3 fs-4 fw-bold">Project 3</p>
+            </div>
+          </div>
+          <div class="img-wrap-project4">
+            <img
+              id="project4"
+              src="https://harnishdesign.net/demo/react/simone/demo/images/projects/project-4.jpg"
+              alt=""
+            />
+            <div class="img-description-layer">
+              <p class="img-description-project4 fs-4 fw-bold">Project 4</p>
+            </div>
+          </div>
+          <div class="img-wrap-project5">
+            <img
+              id="project5"
+              src="https://harnishdesign.net/demo/react/simone/demo/images/projects/project-5.jpg"
+              alt=""
+            />
+            <div class="img-description-layer">
+              <p class="img-description-project5 fs-4 fw-bold">Project 5</p>
+            </div>
+          </div>
+          <div class="img-wrap-project6">
+            <img
+              id="project6"
+              src="https://harnishdesign.net/demo/react/simone/demo/images/projects/project-6.jpg"
+              alt=""
+            />
+            <div class="img-description-layer">
+              <p class="img-description-project6 fs-4 fw-bold">Project 6</p>
+            </div>
+          </div>
+          <div class="img-wrap-project7">
+            <img
+              id="project7"
+              src="https://harnishdesign.net/demo/react/simone/demo/images/projects/project-7.jpg"
+              alt=""
+            />
+            <div class="img-description-layer">
+              <p class="img-description-project7 fs-4 fw-bold">Project 7</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
     <script
-      src="assets/images-portrait/clouds-square.svg"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
