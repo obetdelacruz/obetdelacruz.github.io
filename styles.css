@@ -104,6 +104,20 @@
 .my-skills {
   background-color: #212529;
   color: whitesmoke;
+
+}
+
+#my-skills-banner-back {
+font-size: 40px;
+font-weight: bolder;
+text-transform: uppercase;
+color: #2a2f34;
+text-align: center;
+}
+#my-skills-banner-front {
+  color: whitesmoke;
+  font-weight: bolder;
+  font-size: 22px;
 }
 
 .my-skills-introduction > h2 {
@@ -241,52 +255,62 @@
 }
 
 /* III. PROJECT SECTION */
+
 .project-section {
   background-color: #353a41;
   color: whitesmoke;
+}
+
+.my-project-banner-back {
+  font-size: 40px;
+  font-weight: bold;
+}
+.my-work-banner-front {
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .project-pictures {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: left;
+  align-items: center;
   gap: 15px;
-
-  padding: 27px 27px; /*need ammendment*/
+  background-color: rebeccapurple;
+  padding: 27px 15px 15px; /*need ammendment*/
 }
 
 #project1 {
-  width: 20em;
+  width: 18em;
   height: auto;
 }
 
 #project2 {
-  width: 20em;
+  width: 18em;
   height: auto;
 }
 #project3 {
-  width: 20em;
+  width: 18em;
   height: auto;
 }
 
 #project4 {
-  width: 20em;
+  width: 18em;
   height: auto;
 }
 
 #project5 {
-  width: 20em;
+  width: 18em;
   height: auto;
 }
 
 #project6 {
-  width: 20em;
+  width: 18em;
   height: auto;
 }
 
 #project7 {
-  width: 20em;
+  width: 18em;
   height: auto;
 }
 
@@ -340,16 +364,52 @@
   filter: blur(4px);
 }
 
-@media screen and (min-width: 961px) {
+
+@media screen and (min-width: 601px) and (max-width: 960px) {
+  .my-project-banner-back {
+      font-size: 61px;
+      font-weight: bold;
+    }
+  
+    .my-work-banner-front {
+      font-size: 35px;
+      font-weight: bold;
+    }
+  
   .project-pictures {
     display: grid;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100vw;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #project1 {
+    width: 20em;
     height: auto;
-    gap: 25px;
-    padding: 50px 50px;
-    margin: auto;
+    background-color: red;
+}
+#project2 {
+  width: 17em;
+  height: auto;
+  background-color: red;
+}
+
+  }
+
+
+@media screen and (min-width: 961px) {
+  .my-project-banner-back {
+      font-size: 204.8px;
+      font-weight: bold;
+    }
+  
+    .my-work-banner-front {
+      font-size: 76.8px;
+      font-weight: bold;
+    }
+  
+  .project-pictures {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+
   }
 }
