@@ -309,7 +309,7 @@
               ">
         Contact
       </h1>
-      <div style="position: absolute; width: 100%; top:3%; left: 0%">
+      <div style="position: absolute; width: 100%; top:1%; left: 0%">
         <h3 class="contact-banner-front" style="
                   text-align: center;
                   color: whitesmoke;
@@ -322,7 +322,7 @@
         <h1 class="text-center text-uppercase">
           Send us a note
         </h1>
-        <form class="form-dark" action="php/mail.php" method="pos">
+        <form class="form-dark" action="php/mail.php" method="post">
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label"></label>
             <input name="username" type="text" class="form-control" id="exampleFormControlInput1" required placeholder="Name">
@@ -344,13 +344,31 @@
       <h2 class="text-uppercase">Address</h2>
       <p>Zone 4, Lunad Street, Poblacion, Pamplona, Camarines Sur, 4416</p>
     </div>
-    <div class="contacts">
-      <img src="assets/images-icons/telephone-icon.svg" alt="cellphone number">
-      <img src="assets/images-icons/mail-icon.svg" alt=" email Address">
+    <section class="contacts-icons">
+    <div class="display-grid-contact-icons">
+      <div class="telephone-icons">
+        <img src="assets/images-icons/telephone-icon.svg" alt="telephone-icon">
+        <p>0918-400-7355</p>
+      </div>
+
+      <div class="gmail-icons">
+        <img src="assets/images-icons/gmail-icon.svg" alt="gmail-icon">
+        <p>lobertdelacruz02@gmail.com</p>
+      </div>
+    </div>
+    <div class="follow-me-container">
+      <h2 class="text-center text-uppercase"> Follow Me</h2>
+      <div class="follow-icons text-center">
+        <img src="assets/images-icons/facebook-icon.svg" alt="facebook-icon">
+        <img src="assets/images-icons/gmail-icon.svg" alt="gmail-icon">
+        <img src="assets/images-icons/github-icon.svg" alt="github-icon">
+        <img src="assets/images-icons/linkin-icon.svg" alt="linkin-icon">
+      </div>
     </div>
     </section>
-    <footer>
-      <p>Copyright &#169 2023 <span>lobert dela cruz.</span>All rights reserved</p>
+
+    <footer class="text-center">
+      <p>Copyright &#169 2023 <span>lobert dela cruz.</span> All rights reserved</p>
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"

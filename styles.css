@@ -583,10 +583,75 @@ text-align: center;
   font-size: 22px;
 }
 
+.form-dark{
+  margin: 15px;
+}
 
-#contacts-icons img {
+#submit-btn {
+  margin: 25px 0;
+}
+
+.text-center {
+margin: 25px 0;
+
+}
+
+.telephone-icons {
+  display: grid;
+  grid-template-columns: 100px 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.telephone-icons > p {
+margin: 0px -40px;
+
+}
+
+.gmail-icons {
+  display: grid;
+  grid-template-columns: 100px 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.gmail-icons > p {
+  margin: 0px -40px;
+}
+
+.telephone-icons img {
+  width: 30px;
   height: auto;
-  width: 1px;
-  margin-left: 5px;
-  background-color: red;
+  
+}
+.gmail-icons img {
+  width: 30px;
+  height: auto;
+}
+
+
+.follow-me-container {
+  margin: 25px 0;
+}
+
+.follow-icons img {
+  width: 30px;
+  height: auto;
+}
+
+
+
+/* FOOTER SECTION */
+footer {
+  background-color: #3f444b;
+  margin: 25px 0;
+  padding: 40px 10px;
+  text-align: center;
+}
+
+footer span {
+  color: #48c291;
+  text-transform: uppercase;
+  font-weight: bold;
+  
 }
