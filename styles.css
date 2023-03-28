@@ -177,6 +177,20 @@ text-align: center;
     text-align: center;
   }
 
+#my-skills-banner-back {
+  font-size: 61px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #2a2f34;
+  text-align: center;
+}
+
+#my-skills-banner-front {
+  color: whitesmoke;
+  font-weight: bolder;
+  font-size: 35px;
+}
+
   .introductory-paragraph::first-letter {
     /* DROP CAP EFFECT */
     color: #ff004e;
@@ -217,6 +231,21 @@ text-align: center;
     font-size: 30px;
     text-align: center;
   }
+
+#my-skills-banner-back {
+  font-size: 125px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #2a2f34;
+  text-align: center;
+}
+
+#my-skills-banner-front {
+  color: whitesmoke;
+  font-weight: bolder;
+  font-size: 70px;
+}
+
 
   .introductory-paragraph::first-letter {
     /* DROP CAP EFFECT */
@@ -264,7 +293,11 @@ text-align: center;
 .my-project-banner-back {
   font-size: 40px;
   font-weight: bold;
+  color: #3f444b;
+  text-align: center;
+  text-transform: uppercase;
 }
+
 .my-work-banner-front {
   font-size: 22px;
   font-weight: bold;
@@ -276,7 +309,6 @@ text-align: center;
   justify-content: space-evenly;
   align-items: center;
   gap: 15px;
-  background-color: rebeccapurple;
   padding: 27px 15px 15px; /*need ammendment*/
 }
 
@@ -322,6 +354,7 @@ text-align: center;
 .img-wrap-project6,
 .img-wrap-project7 {
   position: relative;
+
 }
 
 .img-description-project1,
@@ -332,10 +365,9 @@ text-align: center;
 .img-description-project6,
 .img-description-project7 {
   position: absolute; /*TO DO: this one need olso of ammendment*/
-  top: 55px;
-  bottom: 50px;
-  left: 55px;
-  right: 55px;
+  top: 37%;
+  width: 100%;
+  left: 31%;
   color: whitesmoke;
   opacity: 0;
   visibility: hidden;
@@ -347,7 +379,7 @@ text-align: center;
 .img-wrap-project4,
 .img-wrap-project5,
 .img-wrap-project6,
-.img-wrap-project7:hover .img-description-project1,
+.img-wrap-project7: hover .img-description-project1,
 .img-description-project2,
 .img-description-project3,
 .img-description-project4,
@@ -355,7 +387,7 @@ text-align: center;
 .img-description-project6,
 .img-description-project7 {
   visibility: visible;
-  opacity: 1;
+  opacity: 0;
 }
 
 /* Hover Effect of Blurring Image during hover */
@@ -371,38 +403,93 @@ text-align: center;
       font-weight: bold;
     }
   
-    .my-work-banner-front {
+  .my-work-banner-front {
       font-size: 35px;
       font-weight: bold;
     }
   
   .project-pictures {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(2, 1fr);
+      display: grid;
+      width: 100%;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: minmax(150px,auto);
+      gap: 25px;
+      justify-content: center;
+      
   }
+
   #project1 {
-    width: 20em;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding-left: 25px;
+    width: 18em;
     height: auto;
-    background-color: red;
+    
+    
 }
-#project2 {
-  width: 17em;
-  height: auto;
-  background-color: red;
+  #project2 {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      padding-right: 30px;
+      width: 18em;
+      height: auto;
+      
+}
+  #project3 {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      padding-left: 25px;
+      width: 18em;
+      height: auto;
+      
+}
+  #project4 {
+      grid-column: 2 / 3;
+      grid-row: 1 / 3;
+      padding-right: 30px;
+      width: 18em;
+      height: auto;
+      
 }
 
+  #project5 {
+      grid-column: 2 / 3;
+      grid-row: 1 / 3;
+      padding-left: 25px;
+      width: 18em;
+      height: auto;
+    
+      
+}
+
+  #project6 {
+      grid-column: 2 / 3;
+      grid-row: 1 / 3;
+      padding-right: 30px;
+      width: 18em;
+      height: auto;
+      
+      
+}
+  #project7 {
+      grid-column: 2 / 3;
+      grid-row: span 2;
+      padding-left: 25px;
+      width: 18em;
+      height: auto;
+      
+}
   }
 
 
 @media screen and (min-width: 961px) {
-  .my-project-banner-back {
-      font-size: 204.8px;
+    .my-project-banner-back {
+      font-size: 125px;
       font-weight: bold;
     }
   
     .my-work-banner-front {
-      font-size: 76.8px;
+      font-size: 75px;
       font-weight: bold;
     }
   
@@ -410,6 +497,96 @@ text-align: center;
     display: grid;
     width: 100%;
     grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(200px, auto);
+    gap: 25px;
+    justify-content: center;
 
   }
+
+    #project1 {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      padding-left: 25px;
+      width: 30em;
+      height: auto;
+    
+  
+    }
+  
+    #project2 {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      width: 30em;
+      height: auto;
+    }
+  
+    #project3 {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      width: 30em;
+      height: auto;
+    }
+  
+    #project4 {
+      grid-column: 2 / 3;
+      grid-row: 1 / 3;
+      padding-left: 25px;
+      width: 30em;
+      height: auto;
+      
+    }
+  
+    #project5 {
+      grid-column: 2 / 3;
+      grid-row: 1 / 3;
+      width: 30em;
+      height: auto;
+    }
+  
+    #project6 {
+      grid-column: 2 / 3;
+      grid-row: 1 / 3;
+      padding-left: 25px;
+      width: 30em;
+      height: auto;
+    }
+  
+    #project7 {
+      grid-column: 2 / 3;
+      grid-row: 4 / 5;
+      padding-left: 25px;
+      width: 30em;
+      height: auto;
+    }
+}
+
+/* CONTACT-SECTION */
+
+.contact-section-banner {
+  position: relative;
+  float: left;
+  width: 100%;
+  background-color: #212529;
+  color: whitesmoke;
+
+}
+
+.contact-banner-back {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #2a2f34;
+  text-align: center;
+}
+
+.contact-banner-front {
+  font-size: 22px;
+}
+
+
+#contacts-icons img {
+  height: auto;
+  width: 1px;
+  margin-left: 5px;
+  background-color: red;
 }
