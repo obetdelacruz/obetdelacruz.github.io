@@ -51,7 +51,7 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
+                  <a id="home-page" class="nav-link active" aria-current="page" href="#"
                     >Home</a
                   >
                 </li>
@@ -65,12 +65,9 @@
                   <a class="nav-link" href="#contact-banner-front">Contact</a>
                 </li>
               </ul>
-              <button
+              <button 
                 class="btn btn-outline-primary rounded-pill btn-md btn-block"
-                role="button"
-                href="https://drive.google.com/drive/folders/1regHzhjCxGaXZFMoB7zLwpdUmMYOdvft"
-              >
-                Resume
+                role="button"><a href="assets/resume/lobert-delacruz-resume.pdf" style="text-decoration: none;" download><img src="assets/resume/lobert-delacruz-resume.pdf" alt="Resume"></a>
               </button>
             </div>
           </div>
@@ -79,10 +76,10 @@
     </header>
     <section>
       <div class="welcome-remarks">
-        <p class="welcome">Welcome</p>
+        <p id="welcome-remarks" class="welcome">Welcome</p>
         <p class="welcome-statement">
           <a
-            href=""
+            href="#"
             class="typewrite"
             data-period="2000"
             data-type='[ "Hi, Im Lobert Dela Cruz.", "I am a Web Developer.", "I Love Design.", "I Love to Work with You." ]'
@@ -309,7 +306,7 @@
               ">
         Contact
       </h1>
-      <div style="position: absolute; width: 100%; top:1%; left: 0%">
+      <div>
         <h3 id="contact-banner-front" style="
                   text-align: center;
                   color: whitesmoke;
@@ -318,18 +315,18 @@
           Get In Touch
         </h3>
       </div>
-      <main>
-        <h1 class="text-center text-uppercase">
+      <main id="form-container" >
+        <h1 id="send-us-a-note"class="text-center text-uppercase">
           Send us a note
         </h1>
         <form class="form-dark" action="php/mail.php" method="post">
           <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label"></label>
+            <label for="exampleFormControlInput1" class="form-label" ></label>
             <input name="username" type="text" class="form-control" id="exampleFormControlInput1" required placeholder="Name">
           </div>
 
           <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label" ></label>
+            <label for="exampleFormControlInput1" class="form-label "></label>
             <input name="user-email" type="email" class="form-control" id="exampleFormControlInput1" required placeholder="Email">
           </div>
 
@@ -337,11 +334,12 @@
           <label for="exampleFormControlTextarea1" class="form-label"></label>
           <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3" required placeholder="Tell me more about what you need..."></textarea>
           </div>
-          <button id="submit-btn" class="btn btn-outline-primary rounded-pill d-grid gap-2 col-lg-6 mx-auto" type="submit" text-align="center">Send Message </button>
+
+          <button id="submit-btn" class="btn btn-outline-primary rounded-pill d-grid gap-2 mx-auto" type="submit" text-align="center">Send Message </button>
         </form>
       </main>
       <div class="text-center">
-      <h2 class="text-uppercase">Address</h2>
+      <h2 id="contact-address" class="text-uppercase">Address</h2>
       <p>Zone 4, Lunad Street, Poblacion, Pamplona, Camarines Sur, 4416</p>
     </div>
     <section class="contacts-icons">
@@ -352,24 +350,28 @@
       </div>
 
       <div class="gmail-icons">
-        <img src="assets/images-icons/gmail-icon.svg" alt="gmail-icon">
+        <a href="mailto:ldelacruz@gbox.adnu.edu.ph"><img src="assets/images-icons/gmail-icon.svg" alt="gmail-icon"></a>
         <p>ldelacruz@gbox.adnu.edu.ph</p>
       </div>
     </div>
     <div class="follow-me-container">
-      <h2 class="text-center text-uppercase"> Follow Me</h2>
+      <h2 id="follow-me"class="text-center text-uppercase"> Follow Me</h2>
       <div class="follow-icons text-center">
-        <img src="assets/images-icons/facebook-icon.svg" alt="facebook-icon">
-        <img src="assets/images-icons/gmail-icon.svg" alt="gmail-icon">
-        <img src="assets/images-icons/github-icon.svg" alt="github-icon">
-        <img src="assets/images-icons/linkin-icon.svg" alt="linkin-icon">
+        <a href="https://www.facebook.com/obet.delacruz6238" target="_blank"><img src="assets/images-icons/facebook-icon.svg" alt="facebook-icon"></a>
+        <a href="https://github.com/obetdelacruz" target="_blank"><img src="assets/images-icons/github-icon.svg" alt="github-icon"></a>
+        <a href="https://www.linkedin.com/in/lobert-dela-cruz-a68901267/" target="_blank"><img src="assets/images-icons/linkin-icon.svg" alt="linkin-icon"></a>
       </div>
     </div>
     </section>
 
     <footer class="text-center">
       <p>Copyright &#169 2023 <span>lobert dela cruz.</span> All rights reserved</p>
+      <div id="home-page-container">
+      <a href="#home-page"><img id="home-page-icon"src="assets/images-icons/back-to-homepage.svg" alt="back-to-homepage"></a>
+      </div>
     </footer>
+
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"

@@ -581,6 +581,23 @@ text-align: center;
 
 #contact-banner-front {
   font-size: 22px;
+  font-weight: bold;
+  position: absolute;
+  width: 100%;
+  top: 1.4%;
+  left: 0%;
+}
+
+#send-us-a-note {
+font-size: 18px;
+}
+
+#contact-address {
+  font-size: 18px;
+}
+
+#follow-me {
+  font-size: 18px;
 }
 
 .form-dark{
@@ -639,7 +656,77 @@ margin: 0px -40px;
   height: auto;
 }
 
+@media screen and (min-width: 601px) and (max-width: 960px) {
 
+.contact-banner-back {
+    font-size: 61px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #2a2f34;
+    text-align: center;
+  }
+
+  #contact-banner-front {
+    font-size: 35px;
+    font-weight: bold;
+    position: absolute;
+    width: 100%;
+    top: 1.4%;
+    left: 0%;
+  }
+  #send-us-a-note {
+    font-size: 20px;
+  }
+  #contact-address {
+    font-size: 20px;
+  }
+  #follow-me {
+    font-size: 20px;
+  }
+
+#form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+}
+
+
+
+
+
+@media screen and (min-width: 961px) {
+.contact-banner-back {
+    font-size: 125px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #2a2f34;
+    text-align: center;
+  }
+
+  #contact-banner-front {
+    font-size: 75px;
+    font-weight: bold;
+    position: absolute;
+    width: 100%;
+    top: 2.5%;
+    left: 0%;
+  }
+  #send-us-a-note {
+  font-size: 30px;
+  }
+
+  #contact-address {
+  font-size: 30px;
+  }
+
+  #follow-me {
+  font-size: 30px;
+  }
+  
+}
 
 /* FOOTER SECTION */
 footer {
@@ -654,4 +741,26 @@ footer span {
   text-transform: uppercase;
   font-weight: bold;
   
+}
+
+#home-page-container {
+  display: flex;
+  justify-content: center;
+}
+
+#home-page-icon {
+  width: 65px;
+  height: auto;
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 960px) {}
+#home-page-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+@media screen and (min-width: 961px) {
+
 }
