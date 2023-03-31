@@ -346,48 +346,8 @@ text-align: center;
   height: auto;
 }
 
-.img-wrap-project1,
-.img-wrap-project2,
-.img-wrap-project3,
-.img-wrap-project4,
-.img-wrap-project5,
-.img-wrap-project6,
-.img-wrap-project7 {
-  position: relative;
-
-}
-
-.img-description-project1,
-.img-description-project2,
-.img-description-project3,
-.img-description-project4,
-.img-description-project5,
-.img-description-project6,
-.img-description-project7 {
-  position: absolute; /*TO DO: this one need olso of ammendment*/
-  top: 37%;
-  width: 100%;
-  left: 31%;
-  color: whitesmoke;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.img-wrap-project1,
-.img-wrap-project2,
-.img-wrap-project3,
-.img-wrap-project4,
-.img-wrap-project5,
-.img-wrap-project6,
-.img-wrap-project7: hover .img-description-project1,
-.img-description-project2,
-.img-description-project3,
-.img-description-project4,
-.img-description-project5,
-.img-description-project6,
-.img-description-project7 {
-  visibility: visible;
-  opacity: 0;
+.project-pictures p {
+  text-align: center;
 }
 
 /* Hover Effect of Blurring Image during hover */
@@ -418,15 +378,18 @@ text-align: center;
       
   }
 
+  .project-pictures p {
+      text-align: center;
+  }
+
   #project1 {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     padding-left: 25px;
     width: 18em;
-    height: auto;
-    
-    
-}
+    height: auto; 
+  }
+  
   #project2 {
       grid-column: 2 / 3;
       grid-row: 1 / 2;
@@ -502,6 +465,23 @@ text-align: center;
     justify-content: center;
 
   }
+
+  .img-description-project1,
+  .img-description-project4,
+  .img-description-project6,
+  .img-description-project7{
+    text-align: center;
+    margin-left: 25px;
+    width: 19em;
+  }
+
+
+.img-description-project2,
+.img-description-project5,
+.img-description-project3{
+  text-align: center;
+  width: 20em;
+}
 
     #project1 {
       grid-column: 1 / 2;
@@ -648,7 +628,9 @@ margin: 0px -40px;
 
 
 .follow-me-container {
-  margin: 25px 0;
+  margin: 1px 0;
+  gap: 2px;
+  padding: auto;
 }
 
 .follow-icons img {
@@ -688,9 +670,6 @@ margin: 0px -40px;
   display: flex;
   flex-direction: column;
 }
-
-
-
 }
 
 
@@ -743,7 +722,7 @@ footer span {
   
 }
 
-#home-page-container {
+#home-page {
   display: flex;
   justify-content: center;
 }
@@ -751,9 +730,11 @@ footer span {
 #home-page-icon {
   width: 65px;
   height: auto;
+  position: absolute;
 }
 
 
+  
 @media screen and (min-width: 601px) and (max-width: 960px) {}
 #home-page-container {
   display: flex;
