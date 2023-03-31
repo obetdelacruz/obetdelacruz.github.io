@@ -476,11 +476,11 @@ text-align: center;
   }
 
 
-.img-description-project2,
-.img-description-project5,
-.img-description-project3{
-  text-align: center;
-  width: 20em;
+  .img-description-project2,
+  .img-description-project5,
+  .img-description-project3{
+    text-align: center;
+    width: 20em;
 }
 
     #project1 {
